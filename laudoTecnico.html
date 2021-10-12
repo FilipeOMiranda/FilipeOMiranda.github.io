@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Template</title>
+</head>
+
+<body>
+    <div class="container" id="divMobile">
+        <div> 
+            <a href="https://confibra.com.br/" class="custom-logo-link" rel="home">
+                <img width="188" height="65" src="https://confibra.com.br/wp-content/uploads/2018/11/logo.png"
+                    class="custom-logo" alt="Confibra">
+            </a>
+        </div>
+        <div class="panel panel-default" id="panel_laudo" fluig-state-hide="0,5,6,8" fluig-state-readonly="19,25">
+            <div class="panel-heading spaceTop">
+                <h3 class="panel-title">Laudo técnico</h3>
+            </div>
+        </div>
+        <table class="table table-borderless">
+            <tr>
+                <td> <b style="color: red;">Ticket</b> ${numProcess} </td>
+            </tr>
+            <tr>
+                <td><b>Nome completo: </b> ${clienteNome} </td>
+            </tr>
+            <tr>
+                <td><b>CPF: </b> ${cpf} </td>
+            </tr>
+            <tr>
+                <td><b>Telefone: </b> ${telefone} </td>
+            </tr>
+            <tr>
+                <td><b>E-mail: </b> ${email} </td>
+            </tr>
+            <br>
+        </table>
+    </div>
+
+
+    <div class="panel-body spaceTop">
+
+        <div class="col-md-12">
+            <div>
+                <h4>Laudo Técnico</h4>
+            </div>
+            <table class="table table-borderless">
+                <thead>
+                    <tr class="alinhamento">
+                        <th>Produto</th>
+                        <th>Quantidade </th>
+                        <th>Defeito </th>
+                        <th>Lote </th>
+                        <th>Turno </th>
+                        <th>MM </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="alinhamento">
+                        <td>
+                            ${laudoTecnico}
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+
+
+    <div class="panel-body spaceTop">
+
+        <div class="col-md-12">
+            <h4>Inclinação</h4>
+            <table class="table table-borderless">
+                <thead>
+                    <tr class="alinhamento">
+                        <th>Linha de produto</th>
+                        <th>Inclinação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="alinhamento">
+                        <td>
+                            ${inclinacao}
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+
+
+    <div class="panel-body spaceTop">
+
+        <div class="col-md-12">
+            <h4>Número de apoio de telhas
+            </h4>
+            <table class="table table-borderless">
+                <thead>
+                    <tr class="alinhamento">
+                        <th>Telha</th>
+                        <th>Número de Apoios</th>
+                        <th>Resultado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="alinhamento">
+                        <td>
+                            ${numeroTelhas}
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+
+
+    <div class="panel-body spaceTop">
+
+        <div class="col-md-12">
+            <h4>Recorte de Canto
+            </h4>
+            <table class="table table-borderless">
+                <thead>
+                    <tr class="alinhamento">
+                        <th>Recorte de Canto</th>
+                        <th>Resultado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="alinhamento">
+                        <td>${recorteCantos}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+
+    <div class="panel-body spaceTop">
+
+        <div class="col-md-12">
+            <h4>Efeito Estufa
+            </h4>
+            <table class="table table-borderless">
+                <thead>
+                    <tr class="alinhamento">
+                        <th>Efeito Estufa</th>
+                        <th>Resultado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="alinhamento">
+                        <td>${efeitoEstufa}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+
+    <div class="panel-body spaceTop">
+
+        <div class="col-md-12">
+            <h4>Fixação de parafusos
+            </h4>
+            <table class="table table-borderless">
+                <thead>
+                    <tr class="alinhamento">
+                        <th>1° Fixação</th>
+                        <th>2° Fixação</th>
+                        <th>Resultado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="alinhamento">
+                        <td>${ficacaoParafuso}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+
+    <div class="panel-body spaceTop">
+
+        <div class="col-md-12">
+            <h4>Recobrimento Longitudinal das telhas
+            </h4>
+            <table class="table table-borderless">
+                <thead>
+                    <tr class="alinhamento">
+                        <th>Telha</th>
+                        <th>Recobrimento</th>
+                        <th>Resultado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="alinhamento">
+                        <td>${recobrimentoLong}</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+    <!-- NOVOS AJUSTES FILIPE -->
+    <div class="panel-body spaceTop"> 
+        <div class="col-md-12">
+            <table class="table table-borderless">
+                <thead>
+                    <tr class="alinhamento">
+                        <h4>Conclusão:</h4>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="alinhamento">
+                        <th>Telhado dentro da Norma ABNT NBR 7196?</th>
+                        <td>NÃO</td>
+                    </tr>
+                    <tr class="alinhamento">
+                        <th>Condições aceitáveis para manter a garantia?</th>
+                        <td>SIM</td>
+                    </tr>
+                    <tr class="alinhamento">
+                        <th>Troca Autorizada?</th>
+                        <td>NÃO</td>
+                    </tr>
+                    <tr class="alinhamento">
+                        <th>Mão de Obra?</th>
+                        <td>SIM</td>
+                    </tr>
+                    <tr class="alinhamento">
+                        <th>OBSERVAÇÕES:</th>
+                    </tr>
+                    <tr class="alinhamento">
+                        <td>Isto é um texto teste</td> 
+                    </tr>
+                    <tr class="alinhamento">
+                        <th>OBSERVAÇÕES GERAIS:</th>
+                    </tr>
+                    <tr class="alinhamento">
+                        <td>Mantem-se a garantia de 5 anos das telhas de fibrocimento</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>    
+
+   <!-- Conclusão: Telhado dentro da Norma ABNT NBR 7196? Condições aceitáveis para manter a garantia? TROCA AUTORIZADA ?
+    MÃO DE OBRA ? OBSERVAÇÕES: OBSERVAÇÕES GERAIS: Var -- > Mantem-se a garantia de 5 anos das telhas de fibrocimento
+NOVOS AJUSTES FILIPE -->
+
+
+    <div class="panel-body spaceTop">
+        <div class="col-md-12">
+            <h4>Assinatura do cliente</h4>
+        </div>
+        <div class="alinhamento spaceBottom">
+            ${assinatura}
+        </div>
+    </div>
+
+
+<style>
+    .spaceTop{
+        margin-top: 5%;
+    }
+    .alinhamento{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    body{
+        border-style: solid;
+        margin: 2%;
+    }
+    .container{
+        padding-left: 36%;
+    }
+    .spaceBottom{
+        margin-bottom: 4%;
+    }
+</style>
+
+</body>
+</html>
